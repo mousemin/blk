@@ -17,7 +17,7 @@ type Blk interface {
 	// IsByURI 判断当前的url是否是当前blk
 	IsByURI(uri *url.URL) bool
 	// InitConf 初始化配置文件
-	InitConf(conf []byte) error
+	InitConf(conf interface{}) error
 	// SetLicense 设置license
 	SetLicense(license []byte) error
 	// Search 搜索

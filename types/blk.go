@@ -24,7 +24,7 @@ type (
 		Title      string         `json:"title"`       // 标题
 		Author     string         `json:"author"`      // 作者
 		Pic        string         `json:"pic"`         // 封面
-		Desc       string         `json:"desc"`        // 简介
+		Desc       []string       `json:"desc"`        // 简介
 		Category   []string       `json:"category"`    // 分类
 		Status     string         `json:"status"`      // 状态
 		UpdateTime *Time          `json:"update_time"` // 更新时间
